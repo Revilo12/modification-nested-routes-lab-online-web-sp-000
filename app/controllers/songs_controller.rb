@@ -32,6 +32,7 @@ class SongsController < ApplicationController
         redirect_to artist_path(artist)
       end
       flash[:alert] = "Artist not found"
+      redirect_to artists_path
     end
   end
 
